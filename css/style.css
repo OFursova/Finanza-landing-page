@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container>header{
+    background-image: url(../img/fon_1.png);
+    color: white;
+}
+
+.container>header>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 2vh 15vw;
+    border-bottom: 2px solid grey;
+}
+
+.container>header>div>h1::before{
+    content: "\f66f";
+    font-family: FontAwesome;
+    color: #EDD700;
+    margin-right: 1rem;
+    font-style: normal;
+}
+
+.container>header>div>h1{
+    font-style: italic;
+    font-size: 32px;
+}
+
+.container>header>div>p{
+    font-size: 20px;
+    padding-left: 2.5rem;
+}
+
+.container>header>div>p>span{
+    font-size: 16px;
+    display: block;
+}
+
+.container>header>div:first-child>p{
+    background-image: url(../img/phone-alt-solid.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+}
+
+.container>header>div:last-child{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15vw;
+}
+
+.container>header h2{
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    top: 4vh;
+    left: 40%;
+
+    text-align: right;
+    word-wrap: break-word;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.container>header h2>span+span{
+    font-size: 32px;
+}
+
+.yellow{
+    color: #EDD700;
+}
+
+.container>header .woman{
+    flex-basis: 50%;
+    align-self: flex-end;
+}
+
+.container>header .woman>img{
+    width: 100%;
+}
+
+.container>header .form{
+    flex-basis: 50%;
+    align-self: flex-end;
+    height: 27rem;
+    min-width: 300px;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    background-color: #011D8A;
+    transform: translateX(-20px);
+    transform: translateY(30px);
+    border-radius: 0 30px 0 0;
+}
+
+.container>header .form>h3{
+    padding-top: 0.5rem;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.container>header .form>p{
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.container>header form input{
+    height: 2rem;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+}
+
+.container>header form>input,
+.container>header form>div,
+.container>header form>textarea {
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.container>header form>input{
+    margin-top: 2vh;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+}
+
+.container>header form>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container>header form>div>input{
+    width: 48%;
+}
+
+.container>header form>div>input:first-child{
+    margin-right: 1vw;
+}
+
+.container>header form>textarea {
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+}
+
+.container>header form input::-webkit-input-placeholder,
+.container>header form>textarea::-webkit-input-placeholder{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container>header form>button{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding: 1em auto;
+    width: 12vw;
+    height: 3rem;
+    display: block;
+
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: #EDD700;
+    border: 1px solid black;
+    border-radius: 7%;
+    box-shadow: 0 0 5px black;
+}
+
+.container>main .digit{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 30vh;
+    padding: 10vh 15vw 3vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.container>main .digit>div{
+    width: 20%;
+    text-align: center;
+}
+
+.container>main .digit>div>p{
+    font-size: 28px;
+    font-weight: bold;
+    color: gray;
+}
+
+.container>main .digit>div>hr{
+    width: 30%;
+    height: 2px;
+    margin: 2vh auto;
+    background-color: #EDD700;
+    border: none;
+}
+
+.container>main .digit>div>p~p{
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.container>main .say{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    padding: 3vh 15vw;
+
+    background-image: url(../img/fon_2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container>main .say>h3{
+    font-size: 24px;
+    color: #011D8A;
+}
+
+.container>main .say>h3::after{
+    content: '\f10d';
+    font-family: FontAwesome;
+    font-size: 40px;
+    color: #EDD700;
+    display: block;
+    text-align: center;
+    margin: 2vh auto;
+}
+
+.container>main .say>p{
+    padding-bottom: 5vh;
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(85, 83, 83);
+}
+
+.container>main .say>div{
+    width: 200px;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container>main .say>div>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container>main .say>div>div>p:first-of-type{
+    color: rgb(85, 83, 83);
+    font-size: 22px;
+    font-style: italic;
+}
+
+.container>main .say>div>div>p:last-of-type{
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    font-style: italic;
+}
+
+.container>footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #011D8A;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container>footer .contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5vh auto;
+}
+
+.container>footer .contact>*{
+    flex-basis: 50%;
+    height: 5vh;
+    width: 15vw;
+    text-align: center;
+}
+
+.container>footer .contact .phone{
+    border-right: 2px solid grey;
+}
+
+.container>footer .contact p{
+    padding-top: 1vh;
+}
+
+.container>footer .contact>.phone>img,
+.container>footer .contact>.mail>img{
+   width: 5vh;
+   height: 5vh;
+   padding: 5px;
+   background-color: #EDD700;
+}
+
+.container>footer>p{
+    padding: 0 15vw 5vh;
+    line-height: 2em;
+    text-align: center;
+}
+
+.container>footer .credits{
+    width: 100%;
+    background-color: navy;
+    align-self: flex-end;
+    text-align: center;
+    line-height: 3em;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+
+
+
